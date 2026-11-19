@@ -30,77 +30,30 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saashosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The AI long-term memory, vector database, and retrieval infrastructure market is estimated at **$3.1B–$3.6B in 2026** and projected to expand past **$8B+ by 2030** (~23–27% CAGR) as autonomous agent workflows mandate persistent, stateful context. The sector is **moderately fragmented** among specialized managed memory/graph services and pure-play vector engines, but is progressively consolidating around dominant cloud database incumbents and major developer orchestration platforms.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Mem0 Platform](https://mem0.ai)**  
-
-  Managed cloud memory layer for personalized AI agents offering automatic fact extraction, multi-level user/session/agent scoping, and low-latency recall APIs.
-
-
-
-- **[Zep Cloud](https://getzep.com)**  
-
-  Enterprise agent memory and context engineering platform powered by temporal knowledge graphs that continuously synthesize user interactions and business data.
-
-
-
-- **[Letta Platform (Letta Cloud)](https://letta.com)**  
-
-  Managed stateful agent runtime built around MemGPT principles for self-editing hierarchical memory, perpetual learning, and long-running context persistence.
-
-
-
-- **[LangMem / LangGraph Cloud (LangChain)](https://langchain.com)**  
-
-  Managed persistence and long-term semantic, episodic, and procedural memory infrastructure integrated natively with LangGraph state checkpoints.
-
-
-
-- **[Graphlit](https://graphlit.com)**  
-
-  Cloud-native multimodal knowledge-graph and RAG memory platform for ingesting, indexing, and querying conversations, documents, and media for AI agents.
-
-
-
-- **[Pinecone](https://pinecone.io)**  
-
-  Fully managed serverless vector database widely used as a high-throughput semantic long-term memory and knowledge retrieval store for production AI agents.
-
-
-
-- **[Qdrant Cloud](https://qdrant.tech)**  
-
-  Managed high-performance vector search and semantic caching cloud built in Rust for multi-tenant agent memory, hybrid search, and context retrieval.
-
-
-
-- **[Redis Cloud & Redis LangCache](https://redis.io)**  
-
-  Managed in-memory data store and semantic caching service engineered for ultra-low-latency short-term agent state, session checkpoints, and LLM response caching.
-
-
-
-- **[Weaviate Cloud](https://weaviate.io)**  
-
-  Managed AI-native vector database offering hybrid keyword/semantic search, generative feedback loops, and multi-tenancy for agent memory persistence.
-
-
-
-- **[Ragie](https://ragie.ai)**  
-
-  Fully managed RAG-as-a-Service and knowledge retrieval platform providing automated document chunking, entity extraction, and hybrid search APIs for AI agents.
+| Platform | Company Scale (Valuation / Revenue) | Starting Paid Pricing | Free Tier Limits | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[LangMem / LangGraph Cloud (LangChain)](https://langchain.com)** | **$3.0B valuation** ($460M total funding) | **$39 / seat / month** (Plus Plan) | **5,000 base traces/month**, 1 user seat, 14-day retention, 1 developer LangGraph deployment | Managed persistence and long-term semantic, episodic, and procedural memory infrastructure integrated natively with LangGraph state checkpoints. |
+| **[Redis Cloud & Redis LangCache](https://redis.io)** | **$2.0B valuation** (> $300M ARR) | **$5.00 / month** ($0.007/hr, Essentials Plan) | **30 MB RAM storage**, 30 concurrent connections, 5 GB monthly bandwidth, 100 ops/sec max throughput | Managed in-memory data store and semantic caching service engineered for ultra-low-latency short-term agent state, session checkpoints, and LLM response caching. |
+| **[Pinecone](https://pinecone.io)** | **$750M valuation** ($138M total funding) | **$50.00 / month** minimum commitment (Standard Plan) | **2 GB storage** (~300k vectors @ 1536d), 1M read units/mo, 2M write units/mo, 5 serverless indexes, 1 GB egress/mo | Fully managed serverless vector database widely used as a high-throughput semantic long-term memory and knowledge retrieval store for production AI agents. |
+| **[Weaviate Cloud](https://weaviate.io)** | **$200M valuation** ($67.7M total funding) | **$45.00 / month** (Flex Serverless Plan) | **100,000 objects**, 1 GB RAM / 10 GB disk, 1 collection (up to 3 tenants) | Managed AI-native vector database offering hybrid keyword/semantic search, generative feedback loops, and multi-tenancy for agent memory persistence. |
+| **[Qdrant Cloud](https://qdrant.tech)** | **~$113M estimated valuation** ($37.8M total funding) | **$25.00 / month** (Standard 1GB Dedicated Cluster) | **4 GB disk storage**, 1 GB RAM, 0.5 vCPU (~1M vectors @ 768d, single-node cluster) | Managed high-performance vector search and semantic caching cloud built in Rust for multi-tenant agent memory, hybrid search, and context retrieval. |
+| **[Letta Platform (Letta Cloud)](https://letta.com)** | **$70M valuation** ($10M total funding) | **$20.00 / month** (Pro Plan; includes $20 usage credits) | **3 stateful agents** (BYOK for LLM inference calls) | Managed stateful agent runtime built around MemGPT principles for self-editing hierarchical memory, perpetual learning, and long-running context persistence. |
+| **[Mem0 Platform](https://mem0.ai)** | **$24.5M total funding** (Series A stage) | **$19.00 / month** (Starter Tier / base overage threshold) | **10,000 adds & 1,000 retrievals/mo** (first 30 days managed); **50,000 adds & 10,000 retrievals/mo** thereafter with BYOK | Managed cloud memory layer for personalized AI agents offering automatic fact extraction, multi-level user/session/agent scoping, and low-latency recall APIs. |
+| **[Ragie](https://ragie.ai)** | **$5.5M total funding** (Seed stage) | **$100.00 / month** (Starter Plan) | **1,000 pages**, 1,000 retrievals, 10 GB streaming, 10 hours audio/video processing | Fully managed RAG-as-a-Service and knowledge retrieval platform providing automated document chunking, entity extraction, and hybrid search APIs for AI agents. |
+| **[Graphlit](https://graphlit.com)** | **$3.56M total funding** (Seed stage) | **$49.00 / month** (Paid Plan base) | **1 GB content storage** ($0 developer credits plan) | Cloud-native multimodal knowledge-graph and RAG memory platform for ingesting, indexing, and querying conversations, documents, and media for AI agents. |
+| **[Zep Cloud](https://getzep.com)** | **~$2.3M total funding** (Seed stage) | **$125.00 / month** (Flex Plan, 50,000 credits) | **10,000 credits/month** (Prototyping free tier, 1 credit ~ 350 bytes ingested) | Enterprise agent memory and context engineering platform powered by temporal knowledge graphs that continuously synthesize user interactions and business data. |
 
 
 
